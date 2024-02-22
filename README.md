@@ -27,18 +27,17 @@ The architecture of the demo is detailed in the term paper, providing insights i
 
 ![Demo Architecture](img/demo_architecture.png)
 
-## Environment Setup Commands
-
-To set up the working environment for this demo, the following commands are used:
-- Start Minikube: `minikube start --memory 8192 cpus`
-- Check services: `kubectl get svc`
-- Deploy MLFlow Server: Steps include deploying configmap secrets and MLFlow deployment.
 
 ## Deployment Screenshots
 
 The following screenshots are available to demonstrate the deployment process:
 - MLFlow logging experiments.
+![MLFlow Logging](img/mlflow_logging_experiments.png)
 - Deployed MLFlow model.
+![MLFlow Model](img/mlflow_model_transition.png)
 - Streamlit Frontend interface.
+![Streamlit Frontend](img/streamlit_frontend.png)
 - Grafana + Prometheus dashboards.
-- Minikube dashboard showcasing cluster details and deployments.
+![Grafana Prometheus](img/grafana_prometheus.png)
+- Kubernetes dashboard showcasing cluster details and deployments.
+![Kubernetes Dashboard](img/kubernetes_dashboard.png)

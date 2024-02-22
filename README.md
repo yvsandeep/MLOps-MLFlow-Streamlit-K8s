@@ -8,7 +8,7 @@ The primary goal of this demo is to illustrate the deployment of a MLOps pipelin
 - **Step 1:** Deploy a Machine Learning model from a Jupyter notebook to an MLFlow Server, which tracks multiple experiments.
 - **Step 2:** Select and deploy a specific experiment to production using MLFlow Server Models.
 - **Step 3:** Access the deployed model via a Streamlit Frontend, deployed on the Kubernetes Cluster.
-- **Step 4:** Monitor cluster metrics using Grafana and Prometheus, including memory usage, CPU usage, filesystem usage, number of pods, and I/O bytes transferred【13†source】.
+- **Step 4:** Monitor cluster metrics using Grafana and Prometheus, including memory usage, CPU usage, filesystem usage, number of pods, and I/O bytes transferred.
 
 ## Demo Setup
 
@@ -19,18 +19,20 @@ The primary goal of this demo is to illustrate the deployment of a MLOps pipelin
   - MLFlow-tracking-server with a backend via GCP PostgreSQL.
   - Streamlit-App for frontend.
   - Grafana for monitoring and alerting via Helm.
-  - Prometheus for metric measurement via Helm【14†source】.
+  - Prometheus for metric measurement via Helm.
 
 ## Demo Architecture
 
-The architecture of the demo is detailed in the term paper, providing insights into the configuration and interaction of various components within the Kubernetes environment【15†source】.
+The architecture of the demo is detailed in the term paper, providing insights into the configuration and interaction of various components within the Kubernetes environment.
+
+![Demo Architecture](img/demo_architecture.png)
 
 ## Environment Setup Commands
 
 To set up the working environment for this demo, the following commands are used:
 - Start Minikube: `minikube start --memory 8192 cpus`
 - Check services: `kubectl get svc`
-- Deploy MLFlow Server: Steps include deploying configmap secrets and MLFlow deployment【16†source】.
+- Deploy MLFlow Server: Steps include deploying configmap secrets and MLFlow deployment.
 
 ## Deployment Screenshots
 
@@ -39,4 +41,4 @@ The following screenshots are available to demonstrate the deployment process:
 - Deployed MLFlow model.
 - Streamlit Frontend interface.
 - Grafana + Prometheus dashboards.
-- Minikube dashboard showcasing cluster details and deployments【17†source】.
+- Minikube dashboard showcasing cluster details and deployments.
